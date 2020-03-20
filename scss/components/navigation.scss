@@ -1,0 +1,35 @@
+.navigation{
+    height: 6rem;
+    width: 95vw;
+    z-index: 1000;
+    margin: 0 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+    animation: logoAppear 5s ease-in;
+    &__list{
+        list-style: none;
+        float: right;
+        padding: 0 3rem;
+    }
+
+    &__item{
+        color: white;
+        display: inline-block;
+        
+    }
+
+    &__link{
+
+        &:link,
+        &:visited{
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+}
