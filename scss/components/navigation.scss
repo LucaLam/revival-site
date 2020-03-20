@@ -4,17 +4,22 @@
     z-index: 1000;
     margin: 0 2rem;
     padding: 1rem 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $primary-header-text-color;
     animation: logoAppear 5s ease-in;
+    opacity: .9;
+
     &__list{
         list-style: none;
         float: right;
         padding: 0 3rem;
+        font-family: $primary-text-font;
+        font-weight: 100;
     }
 
     &__item{
         color: white;
         display: inline-block;
+        letter-spacing: .4rem;
         
     }
 
@@ -23,10 +28,10 @@
         &:link,
         &:visited{
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 300;
         padding: 1rem 2rem;
-        color: white;
+        color: $primary-header-text-color;
         text-decoration: none;
         text-transform: uppercase;
     }

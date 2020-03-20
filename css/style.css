@@ -23,7 +23,7 @@ body {
     opacity: 1; } }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(to right, rgba(38, 34, 35, 0.95), rgba(33, 36, 38, 0.95)), url(assets/hero.jpg);
   background-size: cover;
@@ -42,20 +42,100 @@ body {
   z-index: 1000;
   margin: 0 2rem;
   padding: 1rem 0;
-  border-bottom: 1px solid white;
-  animation: logoAppear 5s ease-in; }
+  border-bottom: 1px solid #F2CF66;
+  animation: logoAppear 5s ease-in;
+  opacity: .9; }
   .navigation__list {
     list-style: none;
     float: right;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    font-family: "Lato";
+    font-weight: 100; }
   .navigation__item {
     color: white;
-    display: inline-block; }
+    display: inline-block;
+    letter-spacing: .4rem; }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     padding: 1rem 2rem;
-    color: white;
+    color: #F2CF66;
     text-decoration: none;
     text-transform: uppercase; }
+
+.section__menu {
+  position: relative;
+  height: 95vh;
+  background-color: #eeeeee; }
+
+.menu {
+  position: relative; }
+  .menu__container {
+    position: absolute;
+    display: inline-block;
+    top: 12rem;
+    left: 18rem; }
+  .menu__card {
+    position: relative;
+    display: inline-block;
+    width: 45rem;
+    height: 50rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 3px; }
+    .menu__card:not(:last-child) {
+      margin-right: 10rem; }
+    .menu__card--drink {
+      background-image: url(assets/drinks.jpg);
+      background-position: center;
+      background-size: cover;
+      overflow: hidden; }
+      .menu__card--drink:hover {
+        transform: scale(1.05); }
+    .menu__card--food {
+      background-image: url(assets/food.jpg);
+      background-position: center;
+      background-size: cover;
+      overflow: hidden; }
+      .menu__card--food:hover {
+        transform: scale(1.05); }
+    .menu__card--heading {
+      position: absolute;
+      text-align: center;
+      font-size: 5rem;
+      font-family: "Lato";
+      font-weight: 300;
+      color: #F2CF66;
+      top: 25%;
+      left: 40%;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 20rem;
+      width: 24.5rem; }
+  .menu__button {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    padding: 2rem; }
+
+.btn-text {
+  font-size: 1.6rem;
+  font-family: "Lato";
+  color: lightgrey;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .btn-text:link, .btn-text:visited {
+    color: lightgrey;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    transition: all .2s; }
+  .btn-text:hover {
+    background-color: black;
+    opacity: .8;
+    color: #F2CF66;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  .btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }

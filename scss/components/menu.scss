@@ -1,0 +1,77 @@
+.section__menu{
+    position: relative;
+    height: 95vh;
+    background-color: #eeeeee;
+
+}
+
+.menu{
+    position: relative;
+    
+    &__container{
+        position: absolute;
+        display: inline-block;
+        top: 12rem;
+        left: 18rem;
+    }
+
+    &__card{
+        position: relative;
+        display: inline-block;
+        width: 45rem;
+        height: 50rem;
+        box-shadow: $standard-box-shadow;
+        border-radius: 3px;
+
+        &:not(:last-child){
+        margin-right: 10rem;
+        }
+
+        &--drink{
+            background-image: url(assets/drinks.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        &--food{
+            background-image: url(assets/food.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        &--heading{
+            position: absolute;
+            text-align: center;
+            font-size: 5rem;
+            font-family: $primary-text-font;
+            font-weight: 300;
+            color: $primary-header-text-color;
+            top: 25%;
+            left: 40%;
+            padding: 2rem;
+            background-color: rgba(#000000, .4);
+            height: 20rem;
+            width: 24.5rem;
+        }
+
+    }
+
+    &__button{
+        position: absolute;
+        top: 80%;
+        left: 40%;
+
+        padding: 2rem;
+    }
+
+}
