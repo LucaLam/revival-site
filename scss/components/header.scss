@@ -1,10 +1,20 @@
 .header{
     height: 95vh;
+    width: 100%;
+    background-image:linear-gradient(to right, 
+    rgba($primary-color-heading, .95), 
+    rgba($primary-color-heading-lighter, .95)),
+    url(assets/hero.jpg);
+    background-size: cover;
+    background-position: top;
+
+    position: relative;
+
 
     &__logo-box{
 
-        &__logo{
+        @include absoluteCentre;
+        opacity: 0.8;
 
-        }
     }
 }
