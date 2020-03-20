@@ -14,7 +14,7 @@
     &__logo-box{
 
         @include absoluteCentre;
-        opacity: 0.8;
+        animation: logoAppear 5s;
 
     }
 }
