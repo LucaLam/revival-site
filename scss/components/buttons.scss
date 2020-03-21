@@ -3,15 +3,16 @@
 
     font-size: 1.6rem;
     font-family: $primary-text-font;
-    color: lightgrey;
+    color: $primary-header-text-color; 
     background-color: rgba(#000000, .4);
+    cursor: pointer;
     
 &:link,
 &:visited{
-            color: lightgrey;
+            color: $primary-header-text-color;
             display: inline-block;
             text-decoration: none;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #eee;
             padding: 3px;
             transition: all .2s;
         }
@@ -19,13 +20,11 @@
         &:hover{
             background-color: black;
             opacity: .8;
-            color: $primary-header-text-color;
+            color: #eee;
             box-shadow: $standard-box-shadow;
-            transform: translateY(-2px);
         }
 
         &:active{
             box-shadow: 0 .5rem 1rem rgba(black, .15);
-            transform: translateY(0);
         }
     }
