@@ -148,7 +148,8 @@ body {
     color: #eee;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .btn-text:active {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0.2rem); }
 
 .footer {
   height: 8vh;
