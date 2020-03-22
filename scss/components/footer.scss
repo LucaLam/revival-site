@@ -33,12 +33,13 @@
     &__icon{
     display: flex;
     align-self: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     fill: $primary-header-text-color;
     opacity: .8;
 
     &:hover{
+        cursor: pointer;
         fill: #eee;
     }
     }

@@ -1,7 +1,13 @@
 .section__menu{
     position: relative;
-    height: 95vh;
-    background-color: #eeeeee;
+    height: 99vh;
+    padding-bottom: 3rem;
+    background-image:linear-gradient(to right, 
+    rgba(#eeeeee, .6), 
+    rgba(#eeeeee, .7)),
+    url(assets/menu-img.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
 

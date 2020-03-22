@@ -62,12 +62,23 @@ body {
     padding: 1rem 2rem;
     color: #F2CF66;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 250%;
+    transition: all, .4s; }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: black;
+    transform: translateX(1rem);
+    opacity: 0.8; }
 
 .section__menu {
   position: relative;
-  height: 95vh;
-  background-color: #eeeeee; }
+  height: 99vh;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(to right, rgba(238, 238, 238, 0.6), rgba(238, 238, 238, 0.7)), url(assets/menu-img.jpg);
+  background-position: center;
+  background-size: cover; }
 
 .menu {
   position: relative; }
@@ -165,11 +176,12 @@ body {
   .footer__icon {
     display: flex;
     align-self: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     fill: #F2CF66;
     opacity: .8; }
     .footer__icon:hover {
+      cursor: pointer;
       fill: #eee; }
 
 .facebook {
