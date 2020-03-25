@@ -1,0 +1,99 @@
+.shows{
+    &__hero{
+    height: 40vh;
+    width: 100%;
+    background-image:linear-gradient(to right, 
+    rgba($primary-color-heading, .65), 
+    rgba($primary-color-heading-lighter, .65)),
+    url(assets/hero-shows.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    }
+
+    &__heading{
+            position: absolute;
+            text-align: center;
+            font-size: 5rem;
+            font-family: $primary-text-font;
+            font-weight: 300;
+            color: rgba($primary-header-text-color, 0.7);
+            @include absoluteCentre;
+
+
+            top: 55%;
+            padding: 2.5rem;
+            background-color: rgba(#000000, .4);
+            height: 12rem;
+            width: 50.5rem;
+    }
+}
+
+.shows-main{
+    height: 60vh;
+}
+
+.shows-table{
+
+    &__container{
+        border: 1px solid $primary-header-text-color;
+
+        position: relative;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+    }
+
+    &__header-container{
+        border: 1px solid $primary-header-text-color;
+        height: 6rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    &__heading{
+        font-size: 1.6rem;
+        width: 33.33333%;
+        height: 6rem;
+        text-align: center;
+        padding-top: 2rem;
+        font-family: $primary-text-font;
+    }
+
+    &__row{
+        border: 1px solid $primary-header-text-color;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        height: 4rem;
+    }
+
+    &__date{
+        font-size: 1.6rem;
+        width: 33.33333%;
+        text-align: center;
+        padding-top: 1rem;
+        font-family: $primary-text-font;
+    }
+
+    &__artist{
+        font-size: 1.6rem;
+        width: 33.33333%;
+        text-align: center;
+        padding-top: 1rem;
+        font-family: $primary-text-font;
+    }
+
+    &__charge{
+        font-size: 1.6rem;
+        width: 33.33333%;
+        text-align: center;
+        padding-top: 1rem;
+        font-family: $primary-text-font;
+    }
+}
