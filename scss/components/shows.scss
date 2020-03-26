@@ -30,18 +30,22 @@
 }
 
 .shows-main{
-    height: 60vh;
+    height: 100vh;
+    background-image: linear-gradient(rgba(white, 0.6), rgba(white, 0.6));
 }
 
 .shows-table{
 
     &__container{
         border: 1px solid $primary-header-text-color;
-
         position: relative;
         top: 20%;
-        left: 10%;
-        width: 80%;
+        left: 15%;
+        width: 71%;
+        height: 30rem;
+
+        background-color: rgba(white, 0.6);
+        border-radius: 3px;
     }
 
     &__header-container{
@@ -87,6 +91,7 @@
         text-align: center;
         padding-top: 1rem;
         font-family: $primary-text-font;
+        
     }
 
     &__charge{
@@ -95,5 +100,15 @@
         text-align: center;
         padding-top: 1rem;
         font-family: $primary-text-font;
+        
     }
+}
+
+.bg-video{
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -1;
+    left: 5.5%;
+
 }
