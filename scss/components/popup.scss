@@ -1,0 +1,76 @@
+.popup-food{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(#000000, 0.8);
+    z-index: 3000;
+    position: fixed;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &__content{
+        height: 100vw;
+        width: 100vh;
+
+    }
+
+    &__img{
+        width: 38vw;
+        height: 99vh;
+        margin-left: 11rem;
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close{
+        color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+        padding: 1rem 2rem;
+        float: right;
+    }
+
+}
+
+.popup-cocktail{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(#000000, 0.8);
+    z-index: 3000;
+    position: fixed;
+
+    opacity: 0;
+    visibility: hidden;
+
+    &__content{
+        height: 100vw;
+        width: 100vh;
+
+    }
+
+    &__img{
+        width: 38vw;
+        height: 99vh;
+        margin-left: 11rem;
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close{
+        color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+        padding: 1rem 2rem;
+        float: right;
+    }
+}

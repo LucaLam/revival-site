@@ -12,6 +12,10 @@ html {
 body {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 @keyframes logoAppear {
   0% {
     opacity: 0; }
@@ -200,6 +204,60 @@ body {
 .tele {
   width: 100%;
   height: 100%; }
+
+.popup-food {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden; }
+  .popup-food__content {
+    height: 100vw;
+    width: 100vh; }
+  .popup-food__img {
+    width: 38vw;
+    height: 99vh;
+    margin-left: 11rem; }
+  .popup-food:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup-food__close {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    float: right; }
+
+.popup-cocktail {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3000;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden; }
+  .popup-cocktail__content {
+    height: 100vw;
+    width: 100vh; }
+  .popup-cocktail__img {
+    width: 38vw;
+    height: 99vh;
+    margin-left: 11rem; }
+  .popup-cocktail:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup-cocktail__close {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    float: right; }
 
 .shows__hero {
   height: 40vh;
